@@ -26,6 +26,8 @@ To test our hypothesis that Amazon Rekognition is not free from discriminatory b
 
 ![Architecture Diagram](AWS_Architecture.jpg)
 
+We set up our workflow using GitHub as the main repository, allowing us to us AWS SageMaker to run our hosted jupyter notebooks using our data from S3 in order to efficiently feed our data to Rekognition. Afterwards, we moved our data into a .csv and sent it back into SageMaker in order to run our analysis on it.
+
 ## The Data Collection Process
 
 To gather the images we used in this study, we relied on images of portraits supplied by an API. We want to test pictures of males and females in the same ethnic group and age range to minimize the confounding variables. We used about 150 pictures generated from the public API. The public API we’ve decided to go with is unsplash.com, which is a picture database that contains over 50k photos under the keyword “portrait.”
