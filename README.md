@@ -22,6 +22,10 @@ These errors in Amazon Rekognition’s software and clear discriminatory biases 
 To test our hypothesis that Amazon Rekognition is not free from discriminatory bias, we plan to manipulate a single image variable to test the response of the ML service’s “Detect Faces” feature across multiple images of a diverse group of people. We will supply one copy of each photo as it is and use an altered version of that same photo to see how confidently the ML service can match the images and recongize the gender, emotion, and age range. During the initial stages of this project, we plan to host a few experiments by comparing blurred versions of images compared to unblurred images.
 
 
+## Our Architecture Overview
+
+![Architecture Diagram] (.AWS Architecture.jpg)
+
 ## The Data Collection Process
 
 To gather the images we used in this study, we relied on images of portraits supplied by an API. We want to test pictures of males and females in the same ethnic group and age range to minimize the confounding variables. We used about 150 pictures generated from the public API. The public API we’ve decided to go with is unsplash.com, which is a picture database that contains over 50k photos under the keyword “portrait.”
