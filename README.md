@@ -69,4 +69,4 @@ Amazon Rekognition proved its abilities in this study and was not found to host 
 
 ## More Information About our Project
 
-For a more detailed look at our project, please visit our blog using this link: https://emory.sharepoint.com/sites/QTM350Fall2020-Vegetariana/Shared%20Documents/Vegetariana/FinalBlog.html
+For a more detailed look at our project, please visit our blog using this link: https://final-blog-vegetariana.s3.amazonaws.com/FinalBlog.html
