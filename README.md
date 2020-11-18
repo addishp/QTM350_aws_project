@@ -24,7 +24,7 @@ To test our hypothesis that Amazon Rekognition is not free from discriminatory b
 
 ## Our Architecture Overview
 
-![Architecture Diagram] (AWS Architecture.jpg)
+![Architecture Diagram] (./AWS Architecture.jpg)
 
 ## The Data Collection Process
 
