@@ -28,6 +28,7 @@ To test our hypothesis that Amazon Rekognition is not free from discriminatory b
 
 We set up our workflow using GitHub as the main repository, allowing us to us AWS SageMaker to run our hosted jupyter notebooks using our data from S3 in order to efficiently feed our data to Rekognition. Afterwards, we moved our data into a .csv and sent it back into SageMaker in order to run our analysis on it.
 
+
 ## The Data Collection Process
 
 To gather the images we used in this study, we relied on images of portraits supplied by an API. We want to test pictures of males and females in the same ethnic group and age range to minimize the confounding variables. We used about 150 pictures generated from the public API. The public API we’ve decided to go with is unsplash.com, which is a picture database that contains over 50k photos under the keyword “portrait.”
@@ -43,7 +44,29 @@ To measure our three variables of interest; gender, emotion, and age range, we u
 
 To see if there is in fact a bias in these measurements across race, we constructed and manually entered a binary variable for each image: "white" and "non-white". In our analysis, we look at the confidence scores between these groups to see if there is a bias in Rekognition. We hypothesize all three variables will have higher confidence scores for the white group than the non-white group.
 
-## WIP
 
-## More Information
+
+## Conclusions
+
+Overall, this study taught us a lot about Amazon Rekognition's capabilities in dealing with altered and imperfect images.
+
+When looking at gender before and after blurring the images, we actually find that the confidence score improves; countering our hypothesis.
+
+When looking at age before and after the blurring the images, we do in fact see a slight decrease in the machine's confidence, as we had suspected.
+
+When looking at the emotion before and after blurring the images, we again see a slightly improved confidence score, again countering our hypothesis.
+
+As for combining these variables with race, we found the following:
+
+The output of the machine's confidence in age with the implementation of a blurred filter across racial groups are slightly volatile, but do not point to any bias.
+
+The output of the machine's confidence in gender with the implementation of a blurred filter across racial groups are slightly more confident and consistent with the white group, but not enough to consider discriminatory.
+
+The output of the machine's confidence in emotion with the implementation of a blurred filter claim bias.
+
+Amazon Rekognition proved its abilities in this study and was not found to host significant racial bias. This is promising news, but needs further development to insure that it truly is appropriate for ICE's needs before being implemented in such a serious manner.
+
+
+## More Information About our Project
+
 For a more detailed look at our project, please visit our blog using this link: https://emory.sharepoint.com/sites/QTM350Fall2020-Vegetariana/Shared%20Documents/Vegetariana/FinalBlog.html
